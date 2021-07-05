@@ -51,7 +51,7 @@ print(answer)
 answer=int(str(num),base)
 print(answer)
 
-'''
+
 파이썬에서는
 파이썬의 int(x, base=10) 함수는 진법 변환을 지원합니다.
 이 기본적인 함수를 잘 쓰면 코드를 짧게 쓸 수 있고, 또 시간을 절약할 수 있습니다.
