@@ -13,6 +13,7 @@ mylist의 길이는 mylist[0]의 길이와 같습니다.
 각 리스트의 길이는 100 이하인 자연수입니다.
 '''
 
+# 행렬의 transpose 개념
 def solution(mylist):
     
     answer=list(map(list,zip(*mylist)))
