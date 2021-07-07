@@ -33,6 +33,14 @@ elif num==1:
 # 파이썬 스러운 코드 => 모듈이 존재
 import string 
 
+num = int(input().strip())
+
+if num==1:
+    print(string.ascii_uppercase)
+elif num==0:
+    print(string.ascii_lowercase)
+ 
+
 string.ascii_lowercase # 소문자 abcdefghijklmnopqrstuvwxyz
 string.ascii_uppercase # 대문자 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 string.ascii_letters # 대소문자 모두 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
