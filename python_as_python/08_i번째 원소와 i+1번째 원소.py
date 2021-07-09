@@ -47,8 +47,6 @@ if __name__ == '__main__':
 하지만 python에서는,
 파이썬의 zip을 이용하면 index를 사용하지 않고 각 원소에 접근할 수 있다.
 
-
-
 if __name__ == '__main__':
     mylist = [83, 48, 13, 4, 71, 11]    
     print(solution(mylist))
