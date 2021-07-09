@@ -24,6 +24,35 @@ mylist	output
 
 def solution(mylist):
     answer = []
-    for i in range(len(mylist)-1):
-        answer.append(abs(mylist[i]-mylist[i+1]))
+    for number1, number2 in zip(mylist, mylist[1:]):
+        answer.append(abs(number1 - number2))
     return answer
+
+
+'''
+다른 언어에서는..(또는 이 기능을 모르시는 분은)
+보통은 다음과 같이 len과 index를 이용하여 각 원소에 접근한다.
+
+def solution(mylist):
+    answer = []
+    for i in range(len(mylist)-1):
+        answer.append(abs(mylist[i] - mylist[i+1]))
+    return answer
+
+if __name__ == '__main__':
+    mylist = [83, 48, 13, 4, 71, 11]    
+    print(solution(mylist))
+    
+    
+하지만 python에서는,
+파이썬의 zip을 이용하면 index를 사용하지 않고 각 원소에 접근할 수 있다.
+
+
+
+if __name__ == '__main__':
+    mylist = [83, 48, 13, 4, 71, 11]    
+    print(solution(mylist))
+    
+※ 주의
+
+zip 함수에 서로 길이가 다른 리스트가 인자로 들어오는 경우에는 길이가 짧은 쪽 까지만 이터레이션이 이루어진다.
